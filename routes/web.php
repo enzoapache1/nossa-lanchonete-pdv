@@ -1,13 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
-
-Route::get('/', function () {
-    return view('landing');
-});
-
-
-Route::get('/admin', function () {
-    return view('dashboard');
-});
+Route::get('/', [ProductController::class, 'index']);
+Route::get('/admin', [ProductController::class, 'admin']);
+Route::post('/admin/produto', [ProductController::class, 'store']); 
