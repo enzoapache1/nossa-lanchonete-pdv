@@ -60,11 +60,11 @@
                     <div class="card-body">
                         <form action="/admin/produto" method="POST">
                             @csrf <div class="mb-3">
-                                <label class="form-label">Nome (Ex: Empada)</label>
+                                <label class="form-label">Nome </label>
                                 <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Preço (Ex: 7.50)</label>
+                                <label class="form-label">Preço </label>
                                 <input type="number" step="0.01" name="price" class="form-control" required>
                             </div>
                             <div class="mb-3">
